@@ -1,0 +1,22 @@
+{
+  "messages": [
+    {
+      "owner": "Me",
+      "title": "Finish Homework",
+      "message": "Finish express server with CRUD.",
+      "id": 1
+    },
+    {
+      "owner": "Wife",
+      "title": "Trash",
+      "message": "Take the trash out.",
+      "id": 2
+    },
+    {
+      "owner": "Son",
+      "title": "Diapers",
+      "message": "Buy more diapers.",
+      "id": 3
+    }
+  ]
+}

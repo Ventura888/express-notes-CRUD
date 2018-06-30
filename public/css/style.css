@@ -1,0 +1,139 @@
+
+
+body {
+    padding:0;
+    margin:0;
+    font-family: 'Open Sans', sans-serif;
+    background: #f9f9f9;
+}
+
+.container {
+    position:relative;
+}
+
+/*========= HEADER ===========*/
+
+header{
+    background: white;
+    border-bottom: 3px solid #f1f1f1;
+}
+.logo {
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Teko', sans-serif;
+    font-weight: 300;
+    color: #484848;
+    display: block;
+    text-decoration: none;
+}
+
+.search {
+    height: 350px;
+    background-image: url(/images/darth-vader.jpg);
+    background-size: cover !important;
+    background-position: center center;
+}
+
+/*========= MSG ===========*/
+
+.msg_item {
+    background: #ffffff;
+    border: 1px solid #e8e8e8;
+}
+
+.msg_item strong{
+    color: #7ad6ff;
+}
+
+.msg_item .header {
+    position: relative;
+    background: #ffffff;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    border-bottom: 1px solid #f8f8f8;
+}
+
+.fa-pencil {
+    position: absolute;
+    top: 8px;
+    right: 40px;
+    color: #b4b4b4;
+}
+
+.msg_item .delete{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    /* background: #dbdbdb; */
+    width: 20px;
+    text-align: center;
+    color: #b4b4b4;
+    padding: 5px;
+    cursor: pointer;
+}
+.msg_item .contents {
+    box-sizing: border-box;
+    padding: 10px;
+}
+.msg_item .title {
+    font-size: 12px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.add_note {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    display: block;
+    border: 1px solid #d0d0d0;
+    padding: 10px;
+    background: #ffffff;
+    color: #3f3f3f;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: 'Teko', sans-serif;
+    font-size: 22px;
+}
+
+/*========= FORM ===========*/
+#myForm{
+    box-sizing: border-box;
+    padding: 10px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form_item {
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 18px;
+    padding: 5px 10px;
+    border: 1px solid #dfdfdf;
+}
+
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #d7d7d7;
+    height: 100px;
+    box-sizing: border-box;
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+button {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    background: #00BCD4;
+    color: #fff;
+    border: 0px;
+}

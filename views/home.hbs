@@ -1,0 +1,55 @@
+
+
+<div class="container">
+
+    {{#each articles}}
+        <div class="msg_item">
+            <div class="header">
+                <div>
+                    <strong>From:</strong> {{this.owner}}</div>
+                <a href="/edit_note/{{this.id}}">
+                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                </a>
+                <div class="delete" data-id="{{this.id}}">x</div>
+            </div>
+
+            <div class="contents">
+                <div class="title">{{this.title}}</div>
+                <div>
+                    {{this.message}}
+                </div>
+            </div>
+
+            <div class="bottom"></div>
+        </div>
+    {{/each}}
+
+
+    <a class="add_note" href="/add_note">
+        Add a note
+    </a>
+
+</div>
+
+<script>
+
+    $('.delete').on('click', function() {
+        const element = $(this).parents().eq(1);
+        const deleteId = $(this).data("id");
+
+
+        $.ajax({
+            type: 'DELETE',
+            url: `/api/delete/${deleteId}`,
+            contentType: "application/json",
+            success:(data) => {
+                element.remove();
+            },
+            error:() => {
+                alert('error')
+        }
+        })
+
+    })
+
+</script>
